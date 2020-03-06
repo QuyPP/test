@@ -1,0 +1,31 @@
+body{
+    min-height: 200vh;
+}
+.go-to-top{
+    display: block;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: -30px;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fa1e4e;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .6s;
+    opacity: 0;
+    transform: rotate(360deg);
+    border: 3px solid white;
+}
+.go-to-top > i{
+    font-size: 35px;
+    line-height: 46px;
+    color: white;
+}
+.go-to-top.shown{
+    right: 20px;
+    opacity: 1;
+    transform: rotate(0deg);
+    box-shadow: 3px 3px 5px #fa1e4e57;
+}
